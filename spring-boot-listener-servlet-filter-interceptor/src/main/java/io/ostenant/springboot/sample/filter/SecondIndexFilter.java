@@ -37,6 +37,7 @@ public class SecondIndexFilter implements Filter {
         }
         chain.doFilter(request, response);
         LOGGER.info("SecondIndexFilter post filter the response");
+//        response.getWriter().println("Hello, Second filter");
 
     }
 

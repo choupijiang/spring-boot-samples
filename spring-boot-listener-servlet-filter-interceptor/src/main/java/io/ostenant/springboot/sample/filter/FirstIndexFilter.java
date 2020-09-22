@@ -37,6 +37,7 @@ public class FirstIndexFilter implements Filter {
         }
         chain.doFilter(request, response);
         LOGGER.info("FirstIndexFilter post filter the response");
+//        response.getWriter().println("hello, first filter");
     }
 
     @Override
